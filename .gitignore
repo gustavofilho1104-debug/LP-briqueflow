@@ -1,0 +1,4 @@
+# Ferramentas de skills usadas para construir o site (não fazem parte do produto)
+.agents/
+.claude/
+skills-lock.json

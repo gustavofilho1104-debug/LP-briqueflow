@@ -1,0 +1,16 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Brique Flow">
+  <defs>
+    <linearGradient id="bfStem" x1="42" y1="10" x2="42" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00E676"/>
+      <stop offset="1" stop-color="#00B362"/>
+    </linearGradient>
+    <linearGradient id="bfBowl" x1="46" y1="44" x2="80" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00FF8C"/>
+      <stop offset="1" stop-color="#00C96B"/>
+    </linearGradient>
+  </defs>
+  <path d="M34 12 L14 25 L34 38 Z" fill="#00E676"/>
+  <rect x="34" y="12" width="16" height="78" rx="4" fill="url(#bfStem)"/>
+  <path d="M50 46 C73 46 80 59 80 68 C80 79 68 90 50 90 Z" fill="url(#bfBowl)"/>
+  <path d="M46 48 L50 46 L50 90 L46 88 Z" fill="#00B362" opacity="0.35"/>
+</svg>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brique Flow — Saiba quanto você realmente lucra</title>
+<meta name="description" content="Pare de vender no achismo. O Brique Flow calcula seu lucro real em cada venda, considerando todos os custos, e te mostra exatamente quanto você ganha.">
+<link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<header class="site-header" id="site-header">
+  <div class="container site-header__inner">
+    <a href="#hero" class="logo" aria-label="Brique Flow — início">
+      <img src="assets/images/logo-icon.svg" alt="" width="28" height="28">
+      <span class="logo__word">Brique<span class="logo__accent">Flow</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#planos">Planos</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+
+    <div class="site-header__actions">
+      <a href="#planos" class="btn btn-ghost">Ver planos</a>
+      <a href="#" class="btn btn-primary js-app-link">Começar grátis</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section id="hero" class="hero bg-dots">
+    <div class="container hero__inner">
+      <div class="glow-beams" aria-hidden="true">
+        <span class="glow-beams__line glow-beams__line--left"></span>
+        <span class="glow-beams__line glow-beams__line--right"></span>
+      </div>
+      <div class="glow-orb" aria-hidden="true"></div>
+
+      <div class="hero__badge">
+        <span class="hero__badge-ring">
+          <img src="assets/images/logo-icon.svg" alt="" width="36" height="36">
+        </span>
+      </div>
+
+      <h1 class="hero__title">Pare de vender no achismo.<br>Saiba exatamente quanto você lucra.</h1>
+      <p class="hero__subtitle">O Brique Flow junta o valor de compra, o frete e todos os outros custos pra calcular o lucro real de cada venda. Assim você sabe se valeu a pena vender por aquele preço.</p>
+
+      <div class="hero__actions">
+        <a href="#" class="btn btn-primary js-app-link">Começar grátis</a>
+        <a href="#como-funciona" class="btn btn-secondary">
+          <span class="btn-icon" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7Z"/></svg></span>
+          Ver como funciona
+        </a>
+      </div>
+
+      <p class="hero__trust">Grátis para sempre no plano Free. Sem precisar entender de gestão.</p>
+
+      <a href="#problema" class="hero__scroll">
+        Role para explorar
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v16m0 0 6-6m-6 6-6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="container hero__visual">
+      <div class="device-frame">
+        <div class="device-frame__bar">
+          <span></span><span></span><span></span>
+        </div>
+        <img src="assets/images/app-dashboard.webp" alt="Dashboard do Brique Flow mostrando faturamento, lucro total, número de vendas e gráfico de resultados por período" width="1600" height="611" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios" class="section stat-row-section">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="section__eyebrow">Conheça o Brique Flow</span>
+        <h2 class="section__title">Feito pra quem compra e revende, e quer saber se está lucrando de verdade.</h2>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-row__item">
+          <svg class="stat-row__icon" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8M15 7h6v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <strong class="stat-row__label">Mais controle</strong>
+          <p class="stat-row__desc">Veja de onde vem o seu lucro, sem adivinhar. Vendas, custos e margens num só lugar.</p>
+        </div>
+        <div class="stat-row__item">
+          <svg class="stat-row__icon" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <strong class="stat-row__label">Mais lucro</strong>
+          <p class="stat-row__desc">Pare de vender por um preço que mal cobre os custos. Saiba a margem antes de fechar negócio.</p>
+        </div>
+        <div class="stat-row__item">
+          <svg class="stat-row__icon" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></svg>
+          <strong class="stat-row__label">Mais resultados</strong>
+          <p class="stat-row__desc">Decisões melhores em cada venda, dia após dia, com números reais na frente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="problema" class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__eyebrow">O problema</span>
+        <h2 class="section__title">Você sabe quanto realmente lucrou na sua última venda?</h2>
+        <p class="section__subtitle">Faturamento não é lucro. E a maioria das contas de brique esconde essa diferença.</p>
+      </div>
+
+      <ul class="problem-grid">
+        <li class="problem-card">
+          <svg class="problem-card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v4M12 16.5h.01M10.3 3.9 2.5 17.4c-.5.9.1 2.1 1.2 2.1h16.6c1.1 0 1.7-1.2 1.2-2.1L13.7 3.9c-.6-1-2-1-2.6 0Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Definiu o preço no achismo, sem saber se ele cobria os custos.</p>
+        </li>
+        <li class="problem-card">
+          <svg class="problem-card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v4M12 16.5h.01M10.3 3.9 2.5 17.4c-.5.9.1 2.1 1.2 2.1h16.6c1.1 0 1.7-1.2 1.2-2.1L13.7 3.9c-.6-1-2-1-2.6 0Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Fez as contas na calculadora e esqueceu do frete ou da embalagem.</p>
+        </li>
+        <li class="problem-card">
+          <svg class="problem-card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v4M12 16.5h.01M10.3 3.9 2.5 17.4c-.5.9.1 2.1 1.2 2.1h16.6c1.1 0 1.7-1.2 1.2-2.1L13.7 3.9c-.6-1-2-1-2.6 0Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Vendeu achando que tinha lucrado bem e só depois viu que quase não sobrou nada.</p>
+        </li>
+        <li class="problem-card">
+          <svg class="problem-card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v4M12 16.5h.01M10.3 3.9 2.5 17.4c-.5.9.1 2.1 1.2 2.1h16.6c1.1 0 1.7-1.2 1.2-2.1L13.7 3.9c-.6-1-2-1-2.6 0Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Confundiu o dinheiro que entrou na venda com o lucro que realmente ficou.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="solucao" class="section">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="section__eyebrow">A solução</span>
+        <h2 class="section__title">Do preço de compra ao lucro real, tudo no fluxo certo.</h2>
+        <p class="section__subtitle">Cada venda passa pelas mesmas quatro etapas. O Brique Flow organiza todas elas por você, na hora.</p>
+      </div>
+
+      <div class="flow">
+        <div class="flow-step">
+          <span class="flow-step__label">Compra</span>
+          <strong class="flow-step__value">R$ 50,00</strong>
+          <p class="flow-step__desc">O que você pagou pelo produto.</p>
+        </div>
+
+        <svg class="flow-arrow" width="32" height="24" viewBox="0 0 32 24" fill="none" aria-hidden="true"><path d="M2 12h26M20 4l8 8-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+        <div class="flow-step">
+          <span class="flow-step__label">Gastos</span>
+          <strong class="flow-step__value">R$ 15,00</strong>
+          <p class="flow-step__desc">Frete, embalagem e outros custos.</p>
+        </div>
+
+        <svg class="flow-arrow" width="32" height="24" viewBox="0 0 32 24" fill="none" aria-hidden="true"><path d="M2 12h26M20 4l8 8-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+        <div class="flow-step">
+          <span class="flow-step__label">Venda</span>
+          <strong class="flow-step__value">R$ 100,00</strong>
+          <p class="flow-step__desc">Por quanto você vendeu.</p>
+        </div>
+
+        <svg class="flow-arrow" width="32" height="24" viewBox="0 0 32 24" fill="none" aria-hidden="true"><path d="M2 12h26M20 4l8 8-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+        <div class="flow-step flow-step--highlight">
+          <span class="flow-step__label">Lucro real</span>
+          <strong class="flow-step__value">R$ 35,00</strong>
+          <p class="flow-step__desc">O que realmente sobrou pra você.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="funcionalidades" class="section">
+    <div class="container">
+      <div class="feature-head">
+        <div>
+          <span class="section__eyebrow">Funcionalidades</span>
+          <h2 class="section__title">Tudo o que você precisa pra precificar com segurança</h2>
+        </div>
+        <a href="#planos" class="btn btn-secondary feature-head__cta">Ver planos</a>
+      </div>
+
+      <div class="feature-rows">
+        <article class="feature-row">
+          <div class="feature-row__text">
+            <span class="feature-row__label">Calculadora de Lucro</span>
+            <h3 class="feature-row__title">Saiba o lucro real antes de fechar negócio</h3>
+            <p class="feature-row__desc">Informe o valor de compra, frete, embalagem e qualquer outro custo. O Brique Flow calcula a margem e o ROI, e ainda simula o impacto de uma contraproposta antes de você aceitar.</p>
+          </div>
+          <div class="feature-row__media">
+            <div class="device-frame device-frame--glow">
+              <div class="device-frame__bar"><span></span><span></span><span></span></div>
+              <img src="assets/images/app-calculadora.webp" alt="Calculadora de lucro do Brique Flow mostrando resultado da venda, lucro líquido, margem, ROI e simulador de oferta" width="1600" height="611" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-row">
+          <div class="feature-row__text">
+            <span class="feature-row__label">Dashboard</span>
+            <h3 class="feature-row__title">Veja faturamento, lucro e margem em um só lugar</h3>
+            <p class="feature-row__desc">Acompanhe suas vendas recentes e descubra quais produtos realmente valeram a pena, sem abrir uma planilha.</p>
+          </div>
+          <div class="feature-row__media">
+            <div class="device-frame device-frame--glow">
+              <div class="device-frame__bar"><span></span><span></span><span></span></div>
+              <img src="assets/images/app-vendas.webp" alt="Dashboard do Brique Flow com vendas recentes e ranking dos produtos com maior lucro e maior margem" width="1600" height="802" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-row">
+          <div class="feature-row__text">
+            <span class="feature-row__label">Controle de Produtos</span>
+            <h3 class="feature-row__title">Organize cada produto, da compra até a venda</h3>
+            <p class="feature-row__desc">Cadastre o que você compra e acompanhe o status, o lucro e a margem de cada item, individualmente.</p>
+          </div>
+          <div class="feature-row__media">
+            <div class="device-frame device-frame--glow">
+              <div class="device-frame__bar"><span></span><span></span><span></span></div>
+              <img src="assets/images/app-produtos.webp" alt="Tela de controle de produtos do Brique Flow com compra, venda, lucro, margem e tempo de venda de cada item" width="1600" height="611" loading="lazy">
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="section">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="section__eyebrow">Como funciona</span>
+        <h2 class="section__title">Do cadastro ao lucro real em três passos</h2>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__number">1</span>
+          <h3 class="step__title">Cadastre o produto</h3>
+          <p class="step__desc">Nome, categoria e valor de compra. Leva poucos segundos.</p>
+        </li>
+        <li class="step">
+          <span class="step__number">2</span>
+          <h3 class="step__title">Informe os custos e o preço</h3>
+          <p class="step__desc">Frete, embalagem, taxas e quanto pretende cobrar.</p>
+        </li>
+        <li class="step">
+          <span class="step__number">3</span>
+          <h3 class="step__title">Veja o lucro real</h3>
+          <p class="step__desc">Margem, ROI e se vale a pena fechar negócio.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="planos" class="section">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="section__eyebrow">Planos</span>
+        <h2 class="section__title">Comece grátis. Evolua quando fizer sentido pra você.</h2>
+        <p class="section__subtitle">Sem contrato de permanência e sem letra miúda.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3 class="pricing-card__name">Free</h3>
+          <p class="pricing-card__tagline">Pra conhecer o Brique Flow</p>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">R$ 0</span>
+          </div>
+          <ul class="pricing-card__list">
+            <li>Calculadora de lucro</li>
+            <li>Controle de produtos e vendas</li>
+            <li>Dashboard com seus números</li>
+          </ul>
+          <a href="#" class="btn btn-secondary btn-block js-app-link">Começar grátis</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3 class="pricing-card__name">Mensal</h3>
+          <p class="pricing-card__tagline">Pra usar sem compromisso longo</p>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">R$ 9,90</span>
+            <span class="pricing-card__period">/mês</span>
+          </div>
+          <ul class="pricing-card__list">
+            <li>Tudo do Free, sem limites</li>
+            <li>Recursos exclusivos, como metas de faturamento</li>
+            <li>Cancele quando quiser</li>
+          </ul>
+          <a href="#" class="btn btn-secondary btn-block js-app-link">Assinar plano mensal</a>
+        </div>
+
+        <div class="pricing-card pricing-card--highlight">
+          <span class="pricing-card__badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8-6.1-3.4-6.1 3.4 1.4-6.8-5.1-4.7 6.9-.8Z"/></svg>
+            Melhor custo-benefício
+          </span>
+          <h3 class="pricing-card__name">Vitalício</h3>
+          <p class="pricing-card__tagline">Pague uma vez. Use pra sempre.</p>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">R$ 29,90</span>
+            <span class="pricing-card__period">pagamento único</span>
+          </div>
+          <span class="pricing-card__value">A partir do 4º mês, o Mensal já custou mais que o Vitalício</span>
+          <ul class="pricing-card__list">
+            <li>Tudo do plano Mensal</li>
+            <li>Pagamento único, sem mensalidade</li>
+            <li>Acesso vitalício ao Brique Flow</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block js-app-link">Garantir acesso vitalício</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container container--narrow">
+      <div class="section__head section__head--center">
+        <span class="section__eyebrow">Dúvidas</span>
+        <h2 class="section__title">Perguntas frequentes</h2>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Preciso pagar para usar?</span>
+            <svg class="accordion-trigger__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p>Não. Você pode começar gratuitamente no plano Free e usar o Brique Flow sem pagar nada.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Não dá pra fazer isso numa calculadora ou planilha?</span>
+            <svg class="accordion-trigger__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p>Dá. Mas você precisaria refazer as contas a cada venda e ainda organizar os resultados por conta própria. O Brique Flow faz isso automaticamente e guarda tudo organizado.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>O que está incluso no Free?</span>
+            <svg class="accordion-trigger__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p>A calculadora de lucro, o controle de produtos e vendas, e o dashboard com seus números. O suficiente pra conhecer o Brique Flow e organizar suas primeiras vendas.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Como funciona o plano mensal?</span>
+            <svg class="accordion-trigger__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p>Por R$9,90 por mês você tem acesso completo ao Brique Flow, incluindo recursos exclusivos como o acompanhamento de metas de faturamento.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Como funciona o Vitalício?</span>
+            <svg class="accordion-trigger__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p>Você paga uma única vez (R$29,90) e tem acesso ao Brique Flow para sempre, sem mensalidade.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Posso cancelar o plano mensal?</span>
+            <svg class="accordion-trigger__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p>Sim, quando quiser, sem multa.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Preciso instalar alguma coisa?</span>
+            <svg class="accordion-trigger__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p>Não. O Brique Flow funciona direto no navegador, sem precisar instalar nada.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Para quem o Brique Flow é indicado?</span>
+            <svg class="accordion-trigger__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p>Pra quem compra e revende roupas, tênis, eletrônicos, acessórios ou produtos usados, e quer saber se está realmente lucrando, mesmo sem entender de gestão.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Posso usar pelo celular?</span>
+            <svg class="accordion-trigger__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p>Sim. O Brique Flow funciona no navegador do computador ou do celular.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Meus dados ficam salvos?</span>
+            <svg class="accordion-trigger__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p>Sim. Suas vendas, produtos e cálculos ficam salvos na sua conta, prontos pra você acessar quando quiser.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta-final" class="section cta-final bg-dots">
+    <div class="glow-beams" aria-hidden="true">
+      <span class="glow-beams__line glow-beams__line--left"></span>
+      <span class="glow-beams__line glow-beams__line--right"></span>
+    </div>
+    <div class="container">
+      <div class="cta-final__box">
+        <span class="hero__badge-ring cta-final__ring">
+          <img src="assets/images/logo-icon.svg" alt="" width="28" height="28">
+        </span>
+        <h2 class="cta-final__title">Pare de fazer conta no achismo.<br>Comece a controlar seu brique.</h2>
+        <p class="cta-final__subtitle">Grátis para começar, sem cartão de crédito.</p>
+        <a href="#" class="btn btn-primary cta-final__btn js-app-link">Começar grátis agora</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#hero" class="logo">
+        <img src="assets/images/logo-icon.svg" alt="" width="24" height="24">
+        <span class="logo__word">Brique<span class="logo__accent">Flow</span></span>
+      </a>
+      <p class="footer__tagline">Organize. Controle. Cresça.</p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Links do rodapé">
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#planos">Planos</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+
+    <p class="footer__copy">© <span id="year"></span> Brique Flow. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
