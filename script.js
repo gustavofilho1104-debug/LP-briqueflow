@@ -1,5 +1,4 @@
-// Troque pela URL final do app/cadastro quando estiver definida.
-const APP_URL = "#";
+const APP_URL = "https://preview--brick-boss.lovable.app/?__lovable_sha=de8d5749";
 
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
