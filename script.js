@@ -1,4 +1,4 @@
-const APP_URL = "https://preview--brick-boss.lovable.app/?__lovable_sha=de8d5749";
+const APP_URL = "https://briqueflow.pages.dev/login";
 
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();

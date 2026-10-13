@@ -938,7 +938,7 @@ h1, h2, h3, h4 {
 }
 
 @media (min-width: 860px) {
-  .pricing-grid { grid-template-columns: repeat(3, 1fr); }
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); max-width: 760px; margin-inline: auto; }
   .pricing-card--highlight {
     transform: translateY(-12px) scale(1.03);
     animation: card-pulse-desktop 3s ease-in-out infinite;
