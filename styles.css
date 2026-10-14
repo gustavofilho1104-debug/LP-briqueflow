@@ -920,14 +920,16 @@ h1, h2, h3, h4 {
 
 .pricing-card__price {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
-  gap: var(--space-xs);
+  column-gap: var(--space-xs);
   margin-bottom: var(--space-lg);
 }
 
 .pricing-card__amount {
   font-size: 2.25rem;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .pricing-card__period {
