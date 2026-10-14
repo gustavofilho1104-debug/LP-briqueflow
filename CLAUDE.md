@@ -44,7 +44,7 @@ Para ver localmente: `python3 -m http.server 8765` na pasta e abrir http://127.0
 - Meta do mês e dinheiro parado aparecem como item curto nos cards de planos, e o dinheiro parado também no benefício "Mais giro". Nenhum dos dois tem seção própria. Instalar como app aparece só no FAQ; a imagem do resultado do mês ainda não aparece. Os cards de planos são de propósito curtos (6 itens de poucas palavras): o dono quer leitura rápida até o botão.
 - Os banners e a imagem do produto de `docs/cakto/` estão no ar nos dois checkouts desde 14/10/2026 (conferido: as imagens do checkout são idênticas aos arquivos). O checkout cobra R$ 0,99 de taxa de serviço além do preço da LP.
 - O app calcula um preço mínimo (`minPrice` em `profit.ts`), mas a tela não mostra. Não prometer na LP.
-- As screenshots de `assets/images/` são de 14/10/2026, já com o Dashboard novo. Os dados são de exemplo, cadastrados na conta do dono (20 produtos de brique e meta de outubro de R$ 4.000 de lucro). Para refazer uma print, usar essa mesma conta para os números baterem entre as imagens.
+- As screenshots de `assets/images/` são de 14/10/2026, já com o Dashboard novo. Os dados são de exemplo, cadastrados na conta do dono. Naquele dia a conta tinha 20 produtos sem custos extras. Depois, ainda em 14/10, a conta ganhou mais 38 produtos (roupas, calçados, perfumes, relógios, eletrônicos, desde junho) e custos de frete, combustível e limpeza em todos, para gravar conteúdo orgânico. Por isso as prints da LP não batem mais com a conta (lucro dos 30 dias passou de R$ 3.440 para R$ 4.260). Se for refazer prints, as da LP e as da conta vão divergir: decidir qual manter. Os produtos não têm foto.
 
 ## Regras combinadas com o usuário
 
