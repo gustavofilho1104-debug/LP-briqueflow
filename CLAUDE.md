@@ -28,6 +28,7 @@ HTML, CSS e JS puros, sem npm. A única biblioteca é o GSAP, carregado do cdnjs
 - `assets/images/og-image.jpg`: prévia do link no WhatsApp/Facebook (1200x630). Sem preço de propósito, pra não ficar velha quando o preço mudar.
 - `assets/images/`: logo e screenshots reais do app (`.webp`). Cada print tem duas versões num `<picture>`: a de computador (`app-*.webp`, janela de navegador) e a de celular (`app-*-mobile.webp`, moldura de aparelho), trocadas abaixo de 760px.
 - `design-system/brique-flow/MASTER.md`: paleta, tipografia (Sora) e regras visuais. Seguir ao mexer no visual.
+- `docs/cakto/`: banners do checkout da Cakto (`banner-vitalicio.png`, `banner-mensal.png`, 1536x1024) e imagem do produto (`produto.png`, 1024x1024). A fonte é `banners.html` (abrir em http://127.0.0.1:8765/docs/cakto/banners.html). Os banners têm o preço: se o preço mudar, trocar ali, gerar os PNGs de novo e o dono sobe no painel da Cakto.
 - `docs/superpowers/specs/`: spec original. **Está desatualizada** no plano Free e nos botões "Começar grátis", que foram removidos.
 
 Para ver localmente: `python3 -m http.server 8765` na pasta e abrir http://127.0.0.1:8765.
@@ -36,12 +37,12 @@ Para ver localmente: `python3 -m http.server 8765` na pasta e abrir http://127.0
 
 - Só **Mensal** (R$ 14,90/mês, checkout `https://pay.cakto.com.br/w8qn83q_863323`) e **Vitalício** (R$ 47,90 único, checkout `https://pay.cakto.com.br/ue6i54i_925936`, em destaque). Os mesmos links estão no `Paywall.tsx` do app.
 - **Não existe plano grátis.** O dono quer criar um no futuro. Ele precisa existir no app antes de voltar para a LP.
-- Garantia de 7 dias e pagamento por Pix ou cartão: vêm do checkout da Cakto (o banner do checkout promete "garantia incondicional de 7 dias"). Aparecem no topo, abaixo dos planos, no FAQ e no CTA final. Se mudar na Cakto, mudar na LP.
+- Garantia de 7 dias e pagamento por Pix ou cartão: vêm do checkout da Cakto (os banners do checkout também mostram "7 dias de garantia"). Aparecem no topo, abaixo dos planos, no FAQ e no CTA final. Se mudar na Cakto, mudar na LP.
 - O CTA final e o botão fixo do celular levam direto ao checkout do Vitalício; o Mensal aparece como link logo abaixo do CTA final.
 - O acesso é liberado pelo e-mail: o cliente cria a conta em `https://briqueflow.pages.dev/cadastro` com o mesmo e-mail da compra. O FAQ "Como acesso depois de comprar?" explica isso.
 - Só prometer o que o app tem. Em 14/10/2026 ele tem: calculadora de lucro (margem, ROI, veredito e simulador de negociação), produtos e vendas, dashboard (lucro comparado com o período anterior, gráfico, campeões de venda, estoque), meta do mês (de lucro ou de faturamento, com ritmo e projeção), dinheiro parado (produtos parados há mais de 15 dias), imagem para compartilhar o resultado do mês, anúncios gerados com IA (limite de 10 por dia, nunca prometer ilimitado), tema claro e escuro e instalar no celular como app.
 - Meta do mês e dinheiro parado aparecem como item curto nos cards de planos, e o dinheiro parado também no benefício "Mais giro". Nenhum dos dois tem seção própria. Instalar como app aparece só no FAQ; a imagem do resultado do mês ainda não aparece. Os cards de planos são de propósito curtos (6 itens de poucas palavras): o dono quer leitura rápida até o botão.
-- Pendência do dono no painel da Cakto (14/10/2026): o banner do checkout do Vitalício diz "Assinatura anual R$ 29,90/ano" e o do Mensal diz "R$ 9,90/mês" (preços e plano antigos), com a logo antiga. O checkout cobra R$ 0,99 de taxa de serviço além do preço da LP.
+- Os banners e a imagem do produto de `docs/cakto/` estão no ar nos dois checkouts desde 14/10/2026 (conferido: as imagens do checkout são idênticas aos arquivos). O checkout cobra R$ 0,99 de taxa de serviço além do preço da LP.
 - O app calcula um preço mínimo (`minPrice` em `profit.ts`), mas a tela não mostra. Não prometer na LP.
 - As screenshots de `assets/images/` são de 14/10/2026, já com o Dashboard novo. Os dados são de exemplo, cadastrados na conta do dono (20 produtos de brique e meta de outubro de R$ 4.000 de lucro). Para refazer uma print, usar essa mesma conta para os números baterem entre as imagens.
 

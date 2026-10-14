@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Banners da Cakto</title>
+<!--
+  Fonte dos banners do checkout da Cakto (não vai pro site).
+  Ver em http://127.0.0.1:8765/docs/cakto/banners.html com o servidor local rodando.
+  Mudou o preço? Troque aqui, gere de novo os PNGs e suba no painel da Cakto.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #00E676;
+    --bg: #0B0F14;
+    --card: #12161C;
+    --border: #232933;
+    --muted: #9CA3AF;
+  }
+  body { margin: 0; background: #2a2a2a; font-family: Sora, sans-serif; color: #fff; }
+  .board { position: relative; overflow: hidden; background: var(--bg); margin: 40px; }
+  .banner { width: 1536px; height: 1024px; }
+  .produto { width: 1024px; height: 1024px; }
+
+  .dots {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1.5px, transparent 1.5px);
+    background-size: 32px 32px;
+    -webkit-mask-image: radial-gradient(ellipse 55% 75% at 76% 50%, black 30%, transparent 80%);
+    mask-image: radial-gradient(ellipse 55% 75% at 76% 50%, black 30%, transparent 80%);
+  }
+  .glow {
+    position: absolute; right: -180px; top: -40px; width: 1100px; height: 1100px;
+    background: radial-gradient(circle, rgba(0, 230, 118, 0.28) 0%, rgba(0, 230, 118, 0) 60%);
+  }
+
+  .copy {
+    position: absolute; left: 104px; top: 0; bottom: 0; width: 760px;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .brand { display: flex; align-items: center; gap: 18px; margin-bottom: 48px; }
+  .brand img { width: 64px; height: 64px; display: block; }
+  .brand span { font-size: 46px; font-weight: 700; letter-spacing: -0.02em; }
+  .brand b, .accent { color: var(--green); font-weight: inherit; }
+
+  .chip {
+    align-self: flex-start;
+    font-size: 26px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--green);
+    border: 2px solid rgba(0, 230, 118, 0.45);
+    background: rgba(0, 230, 118, 0.1);
+    border-radius: 999px;
+    padding: 10px 26px;
+    margin-bottom: 30px;
+  }
+  h1 {
+    margin: 0 0 28px;
+    font-size: 82px; line-height: 1.04; letter-spacing: -0.035em; font-weight: 700;
+  }
+  h1 span { display: block; white-space: nowrap; }
+  .price { display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px; }
+  .price strong { font-size: 132px; line-height: 1; font-weight: 800; letter-spacing: -0.03em; white-space: nowrap; }
+  .price span { font-size: 38px; color: var(--muted); font-weight: 600; }
+
+  ul { list-style: none; margin: 0 0 40px; padding: 0; display: flex; flex-direction: column; gap: 18px; }
+  li { display: flex; align-items: center; gap: 18px; font-size: 38px; font-weight: 600; }
+  li svg { width: 38px; height: 38px; flex-shrink: 0; color: var(--green); }
+
+  .guarantee {
+    align-self: flex-start;
+    display: inline-flex; align-items: center; gap: 14px;
+    font-size: 32px; font-weight: 700;
+    background: var(--card); border: 2px solid var(--border); border-radius: 999px;
+    padding: 14px 30px 14px 22px;
+  }
+  .guarantee svg { width: 40px; height: 40px; color: var(--green); }
+
+  .phone {
+    position: absolute; left: 960px; top: 92px; width: 476px;
+    padding: 10px; background: var(--card); border: 2px solid var(--border); border-radius: 48px;
+    box-shadow: 0 0 2px 2px rgba(0, 230, 118, 0.18), 0 60px 160px -30px rgba(0, 230, 118, 0.5);
+  }
+  .phone img { display: block; width: 100%; height: auto; border-radius: 38px; }
+
+  /* Imagem do produto: só a marca, porque a Cakto mostra pequena e quadrada */
+  .produto .glow { right: auto; left: 50%; top: 50%; width: 1000px; height: 1000px; transform: translate(-50%, -50%); }
+  .produto .mark {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 56px;
+  }
+  .produto .mark img { width: 380px; height: 380px; display: block; }
+  .produto .mark span { font-size: 116px; font-weight: 700; letter-spacing: -0.03em; }
+</style>
+</head>
+<body>
+
+<div class="board banner" id="vitalicio">
+  <div class="dots"></div>
+  <div class="glow"></div>
+  <div class="copy">
+    <div class="brand"><img src="/assets/images/logo-icon.svg" alt=""><span>Brique<b>Flow</b></span></div>
+    <span class="chip">Acesso vitalício</span>
+    <h1><span>Pague uma vez.</span> <span>Use pra sempre.</span></h1>
+    <div class="price"><strong>R$ 47,90</strong><span>pagamento único</span></div>
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Lucro real de cada venda</li>
+      <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Controle de estoque e vendas</li>
+      <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Anúncios prontos com IA</li>
+    </ul>
+    <span class="guarantee"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 5 6v5c0 4.4 3 8.3 7 9.5 4-1.2 7-5.1 7-9.5V6l-7-3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>7 dias de garantia</span>
+  </div>
+  <div class="phone"><img src="/assets/images/app-dashboard-mobile.webp" alt=""></div>
+</div>
+
+<div class="board banner" id="mensal">
+  <div class="dots"></div>
+  <div class="glow"></div>
+  <div class="copy">
+    <div class="brand"><img src="/assets/images/logo-icon.svg" alt=""><span>Brique<b>Flow</b></span></div>
+    <span class="chip">Plano mensal</span>
+    <h1><span>Comece agora.</span> <span>Sem fidelidade.</span></h1>
+    <div class="price"><strong>R$ 14,90</strong><span>por mês</span></div>
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Lucro real de cada venda</li>
+      <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Controle de estoque e vendas</li>
+      <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Anúncios prontos com IA</li>
+    </ul>
+    <span class="guarantee"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 5 6v5c0 4.4 3 8.3 7 9.5 4-1.2 7-5.1 7-9.5V6l-7-3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>7 dias de garantia</span>
+  </div>
+  <div class="phone"><img src="/assets/images/app-dashboard-mobile.webp" alt=""></div>
+</div>
+
+<div class="board produto" id="produto">
+  <div class="glow"></div>
+  <div class="mark"><img src="/assets/images/logo-icon.svg" alt=""><span>Brique<b class="accent">Flow</b></span></div>
+</div>
+
+</body>
+</html>
