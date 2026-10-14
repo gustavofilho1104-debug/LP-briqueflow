@@ -515,16 +515,22 @@ h1, h2, h3, h4 {
   }
 }
 
+/* No celular o <picture> troca para a print do app em formato de celular:
+   a moldura vira um aparelho e a barra de navegador some. Do 760px para cima,
+   print de computador numa janela de navegador. */
 .device-frame {
+  max-width: 340px;
+  margin-inline: auto;
+  padding: 6px;
   background: var(--color-card);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
+  border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 0 1px 1px rgba(0, 230, 118, 0.15), 0 40px 100px -30px rgba(0, 230, 118, 0.25), 0 30px 80px -20px rgba(0, 0, 0, 0.6);
 }
 
 .device-frame__bar {
-  display: flex;
+  display: none;
   gap: 6px;
   padding: var(--space-md);
   border-bottom: 1px solid var(--color-border);
@@ -536,9 +542,24 @@ h1, h2, h3, h4 {
   background: var(--color-border);
 }
 
+.device-frame picture {
+  display: block;
+}
+
 .device-frame img {
   width: 100%;
   height: auto;
+  border-radius: 24px;
+}
+
+@media (min-width: 760px) {
+  .device-frame {
+    max-width: none;
+    padding: 0;
+    border-radius: var(--radius-lg);
+  }
+  .device-frame__bar { display: flex; }
+  .device-frame img { border-radius: 0; }
 }
 
 /* ============================================
@@ -716,6 +737,10 @@ h1, h2, h3, h4 {
 @media (min-width: 900px) {
   .feature-row {
     grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+  /* A imagem fica sempre com a coluna larga, mesmo quando troca de lado. */
+  .feature-row:nth-child(even) {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
   }
   .feature-row:nth-child(even) .feature-row__text { order: 2; }
   .feature-row:nth-child(even) .feature-row__media { order: 1; }

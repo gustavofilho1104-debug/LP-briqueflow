@@ -23,7 +23,7 @@ HTML, CSS e JS puros, sem npm. A única biblioteca é o GSAP, carregado do cdnjs
 - `index.html`: a página inteira. Seções: hero, benefícios, problema, solução, funcionalidades, como funciona, planos, FAQ, CTA final.
 - `styles.css`: estilos, mobile-first.
 - `script.js`: ano do rodapé, menu mobile, animações de entrada (GSAP, desligadas para quem pede menos movimento), accordion do FAQ e `APP_URL`. Todo link com a classe `js-app-link` recebe `APP_URL` (hoje `https://briqueflow.pages.dev/login`).
-- `assets/images/`: logo e screenshots reais do app (`.webp`). Estão desatualizadas, ver "Planos e links".
+- `assets/images/`: logo e screenshots reais do app (`.webp`). Cada print tem duas versões num `<picture>`: a de computador (`app-*.webp`, janela de navegador) e a de celular (`app-*-mobile.webp`, moldura de aparelho), trocadas abaixo de 760px.
 - `design-system/brique-flow/MASTER.md`: paleta, tipografia (Sora) e regras visuais. Seguir ao mexer no visual.
 - `docs/superpowers/specs/`: spec original. **Está desatualizada** no plano Free e nos botões "Começar grátis", que foram removidos.
 
@@ -36,7 +36,7 @@ Para ver localmente: `python3 -m http.server 8765` na pasta e abrir http://127.0
 - O acesso é liberado pelo e-mail: o cliente cria a conta em `https://briqueflow.pages.dev/cadastro` com o mesmo e-mail da compra. O FAQ "Como acesso depois de comprar?" explica isso.
 - Só prometer o que o app tem. Em 14/10/2026 ele tem: calculadora de lucro (margem, ROI, veredito, preço mínimo e simulador de negociação), produtos e vendas, dashboard (lucro comparado com o período anterior, gráfico, campeões de venda, estoque), meta do mês (de lucro ou de faturamento, com ritmo e projeção), dinheiro parado (produtos parados há mais de 15 dias), imagem para compartilhar o resultado do mês, anúncios gerados com IA (limite de 10 por dia, nunca prometer ilimitado), tema claro e escuro e instalar no celular como app.
 - A LP ainda não mostra meta do mês, dinheiro parado nem instalar como app (pendência do dono). O FAQ "Preciso instalar alguma coisa?" diz que funciona no navegador, o que continua certo, mas não cita que dá para instalar.
-- As screenshots de `assets/images/` são de 06/10/2026, de antes do redesenho do Dashboard (13/10). Trocar por prints novos do app ao atualizar a LP.
+- As screenshots de `assets/images/` são de 14/10/2026, já com o Dashboard novo. Os dados são de exemplo, cadastrados na conta do dono (20 produtos de brique e meta de outubro de R$ 4.000 de lucro). Para refazer uma print, usar essa mesma conta para os números baterem entre as imagens.
 
 ## Regras combinadas com o usuário
 
