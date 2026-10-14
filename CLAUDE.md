@@ -31,7 +31,7 @@ Para ver localmente: `python3 -m http.server 8765` na pasta e abrir http://127.0
 
 ## Planos e links
 
-- Só **Mensal** (R$ 9,90/mês, checkout `https://pay.cakto.com.br/w8qn83q_863323`) e **Vitalício** (R$ 29,90 único, checkout `https://pay.cakto.com.br/ue6i54i_925936`, em destaque). Os mesmos links estão no `Paywall.tsx` do app.
+- Só **Mensal** (R$ 14,90/mês, checkout `https://pay.cakto.com.br/w8qn83q_863323`) e **Vitalício** (R$ 47,90 único, checkout `https://pay.cakto.com.br/ue6i54i_925936`, em destaque). Os mesmos links estão no `Paywall.tsx` do app.
 - **Não existe plano grátis.** O dono quer criar um no futuro. Ele precisa existir no app antes de voltar para a LP.
 - O acesso é liberado pelo e-mail: o cliente cria a conta em `https://briqueflow.pages.dev/cadastro` com o mesmo e-mail da compra. O FAQ "Como acesso depois de comprar?" explica isso.
 - Só prometer o que o app tem. Em 14/10/2026 ele tem: calculadora de lucro (margem, ROI, veredito, preço mínimo e simulador de negociação), produtos e vendas, dashboard (lucro comparado com o período anterior, gráfico, campeões de venda, estoque), meta do mês (de lucro ou de faturamento, com ritmo e projeção), dinheiro parado (produtos parados há mais de 15 dias), imagem para compartilhar o resultado do mês, anúncios gerados com IA (limite de 10 por dia, nunca prometer ilimitado), tema claro e escuro e instalar no celular como app.
